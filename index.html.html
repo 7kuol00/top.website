@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: white;
+            margin: 0;
+            padding: 10px;
+            height: 5000px;
+        }
+         .bg-img{
+            /* the image used */
+            background: url(./new\ york\ im.webp);
+
+
+            min-height: 500px;
+              /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+.form{
+    background-color:wheat;
+    width: 350px;
+    height: 350px;
+    border: 1px gainsboro solid;
+    border-radius: 8px;
+    margin-left: 30%;
+    justify-content: center;
+    margin-top: 4%;
+
+}        
+
+
+.login{
+    background-color:white ;
+    color: black;
+    margin: 3%;
+    width: 15px;
+    height: 5px;
+
+    
+    
+    
+
+}
+.login-btn{
+    width: 100px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    margin-top: 25%;
+    
+
+}
+   
+.container-form{
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+.signup-btn{
+    width: 100px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    margin-top: 45%;
+
+
+}
+h1{
+    font-size: 23px;
+color: blue;
+float: left;
+
+}
+ .navbar{
+    display: flex;
+    float: right;
+    margin-right: 5%;
+    margin-top: 3%;
+    text-align: right;
+     align-content: space-between;
+
+    
+
+    
+}
+
+
+
+
+    </style>
+     
+    <p>Navbar</p>
+    <div class="bg-img">
+        <div class="navbar">
+            <i><a href="#">contact</a></i>
+            <i><a href="#">About</a></i>
+            <i><a href="#">services</a></i>
+            </div>
+        <div class="container-form">
+
+            <di class="form">
+                <div class="login">
+                <label for="Email">Email</label>
+                <input type="Email" placeholder="Email" required name="id"/>
+                <br/>
+                <label for="password">password</label>
+                <input type="password" placeholder="password" required name="id"/>
+                <br/>
+                <button class="login-btn"onclick="returnhander(event)">login</button>
+                <br>
+                <button class="signup-btn">New Account</button>
+                <h1>forgot password?</h1>
+                </div>
+            </di>
+        </div>
+    </div>
+</body>
+</html>
